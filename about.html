@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Beartooth Fund</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
+.w3-navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large">
+    <li class="w3-opennav w3-right w3-hide-large">
+      <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="file:///C:/Users/Andrew/Desktop/Website%20Final/index.html" class="w3-theme-l1">BearTooth</a></li>
+    <li class="w3-hide-small"><a href="file:///C:/Users/Andrew/Desktop/Website%20Final/about.html" class="w3-hover-white">About</a></li>
+    <li class="w3-hide-small"><a href="file:///C:/Users/Andrew/Desktop/Website%20Final/projects.html" class="w3-hover-white">Projects</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-hover-white">News</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-hover-white">How to Apply</a></li>
+    <li class="w3-hide-medium w3-hide-small"><a href="#" class="w3-hover-white">Donate</a></li>
+    <li class="w3-hide-medium w3-hide-small"><a href="#" class="w3-hover-white">Partners</a></li>
+  </ul>
+</div>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4><b>Menu</b></h4>
+  <a href="#" class="w3-hover-black">Who I am</a>
+  <a href="#" class="w3-hover-black">My mission</a>
+  <a href="#" class="w3-hover-black">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">About</h1>
+      <p>BearTooth is a nonprofit organization focused on funding education programs in underpriveledged cities all over the globe. Here at Beartooth, we beleive basic education is a necessity for societies to thrive. Basic education is the foundation of a functional and productive society. In our efforts to provide this to those who don't have the resources, we create opportunities for jobs within our organization for those interested in getting into public service. We hire students from all over the world who share our values, offering experience, competitive pay, and scholarships.</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">How we started</h1>
+      <p>Beartooth was started when Azucena Risco was still in college. She has always been an activist when it comes to education, and when she realized she had the resources and the capacity to make a difference, she started Beartooth. Her goal from the start was to provide education to underpriviledged corners of the world. In 2014, Beartooth took shape, and less than a year later the organization had raised 70,000 dollars for a project in Madagascar. A facility and books were purchased, and a staff was formed. That was the first school that Beartooth formed, and the partners at Beartooth have been working hard ever since.</p>
+    <img src="milu.jpg" >  
+	</div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Future Plans</h1>
+      <p>Beartooth has been looking into starting projects in Bolivia. We are in the process of meeting with local government officials to sort out the details, and after that we will be organizing a few fundraising events. For this project, we are joining with another organization from Peru. Our goal is to build several schools, as well as hire staff members. The plan will provide education to areas that hold well over 20,000 people. We are hopeful to make this work.</p>
+    </div>
+   
+  </div>
+
+  
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Join the cause! Read up on some of our upcoming projects to get involved! We need your help, please apply to volunteer or make a donation.</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Contact me at Azucena0000@gmail.com</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
